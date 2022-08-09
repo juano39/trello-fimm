@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    
+    <div class="container">
+        <header class="logo">
+            <div class="trello">
+                <div class="trello__1"></div>
+                <div class="trello__2"></div>
+
+            </div>
+
+            <h1 class="tarea" id="btnTarea">Crear Tarea</h1>
+        </header>
+
+        
+        <section class="procesos">
+    
+            <section class="crear__procesos task" id="pendiente">
+                <h2 class="title__procesos">Tarea Pendiente</h2>
+                
+                
+     
+            </section>
+
+            
+    
+            <section class="pendiente__procesos task">
+                <h2 class="title__procesos">Tareas En Proceso</h2>
+    
+                
+    
+            </section>
+    
+    
+            <section class="ejecutando__procesos task">
+                <h2 class="title__procesos">Tareas Finalizada</h2>
+    
+                
+            </section>
+    
+        </section>
+    </div>
+
+    <div id='ventanaModal' class="modal">
+
+        <section class="container__modal">
+
+            <h3 class="title__modal">Crear Tarea</h3>
+
+            <form action="" class="form" id="formulario">
+                <div class="grupo__form">
+                    <input type="text" id="tarea">
+                    <label for=""> Tarea</label>
+                </div>
+
+                <div class="grupo__form">
+                    <input type="text" id="responsables">
+                    <label for="">Responsables</label>
+                </div>
+
+                <div class="grupo__form">
+                    <input type="text" id="descripcion">
+                    <label for="">Descripcion</label>
+                </div>
+
+                <button type="submit">Programas Tarea</button>
+            </form>
+        </section>
+
+    </div>
+
+    <template id="template">
+        <article class="tmp">
+            <h4 class="title__tmp"></h4>
+            <div>
+                <ul class="responsables__tmp">
+                    <li class="item__tmp"></li>
+                </ul>
+            </div>
+            <p class="descripcion__tmp ">
+
+            </p>
+        </article>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/sortable.js"></script>
+    <script src="app/formulario.js"></script>
+  <script src="app/moda.js"></script>
+  <script src="app/dragge.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,249 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    align-items: center;
+    transform: scale(0);
+    transition: transform .3s;
+}
+
+.container__modal {
+    background-color: #DDF7F8;
+    width: 70vh;
+    height: 70vh;
+    padding: .1px;
+    border-top-left-radius: 50px 100px;
+    border-radius: 50px 100px;
+}
+
+.show {
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.title__modal {
+    width: 98%;
+    color: #045256;
+    text-align: center;
+    font-size: 40px ;
+    font-weight: bold;
+    margin-top: .5rem;
+    border-bottom: solid #045256 1px;
+}
+
+.container {
+    background: rgb(221,247,248);
+    background: radial-gradient(circle, rgba(221,247,248,1) 12%, rgba(154,184,186,1) 92%);
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1px;
+
+}
+
+.tarea {
+    background-color: #045256;
+    padding: 2px 5px;
+    margin: 0;
+    color: #DDF7F8;
+    border-radius: 0 0 0 15px;
+    cursor: pointer;
+}
+
+
+.trello{
+    width: 40px;
+    height: 45px;
+    background-color: #045256;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.trello__1 {
+    height: 100%;
+}
+
+.trello__2 {  
+    height: 60%;
+}
+
+.trello__1,
+.trello__2{
+    width: 40%;
+    background-color: #DDF7F8;
+}
+
+.trello,
+.trello__1,
+.trello__2 {
+    border-radius: 10px;
+}
+
+.procesos {
+  
+    min-height: 86.9vh;
+    display: flex;
+    /* align-items: center; */
+    padding: 0.1px;
+    margin-top: 20px;
+   
+    
+}
+
+.crear__procesos{
+    width: 20%;
+}
+
+.crear__procesos,
+.pendiente__procesos,
+.ejecutando__procesos {
+    min-height: 30rem;
+    margin-left: 1%;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 0.1px;
+    background-color: #DDF7F8;
+    box-shadow: -2px 15px 18px -7px rgba(0, 0, 0, 0.355);
+}
+
+.pendiente__procesos,
+.ejecutando__procesos{
+    width: 38%;
+}
+
+.title__procesos{
+    text-align: center;
+    margin: 0;
+    color: #DDF7F8 ;
+    box-shadow: 0px 10px 5px -8px rgba(0,0,0,0.75);
+    border-radius: 10px 10px 0 0;
+    background-color: #045256;
+}
+
+/* Formulario */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+
+}
+
+.grupo__form {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input {
+    background: none;
+    color: #DDF7F8;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #045256;
+}
+
+input:focus{
+    outline: none;
+    color: #045256;
+}
+
+label{
+    color: #045256;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -14px;
+    font-size: 12px;
+    color: black;
+}
+
+
+/* Templete */
+
+.tmp {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #045256;
+    border-radius: 10px;
+    padding: 0 5px;
+    
+}
+
+.title__tmp {
+    padding: 5px 5px;
+    font-size: 25px;
+    margin-bottom: 2px;
+}
+
+.responsables__tmp{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding: 5px 0.1px;
+    margin-left: 5px;
+    
+    
+}
+
+.item__tmp {
+    background-color: #DDF7F8;
+    border-radius: 15px;
+    padding: 5px 5px;
+    margin-right: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+}
+
+.descripcion__tmp {
+    padding: 5px 0;
+    color: #DDF7F8;
+    /* display: none; */
+    transition: display 1s ;
+}
+
+.activar__tmp {
+    display: block;
+}
+
+
+
+
+
+
+
